@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="varJonathanR">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/assets/devchallenges.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="./src/index.js" defer></script>
+    <title>QA Code Generator || varJonathanR</title>
+</head>
+<body>
+    <section id="input-section" class="input-section">
+        <img src="./src/assets/logo-qr-generator.svg">
+        <form id="form" action="" autocomplete="off">
+            <label for="link">
+                <input id="url" type="text" placeholder="Enter an URL" required>
+                <button type="submit">QR Code</button>
+            </label>
+        </form>
+        <p id="errMessage" class="errMessage"></p>
+    </section>
+    <section id="output-section" class="output-section">
+        <div id="qrContainer" class="qrContainer">
+            <img id="qr" src="" alt="QR Code">
+        </div>
+        <div class="btn-container">
+            <button id="downloadBtn">Download <i class="bi bi-download"></i></button>
+            <button id="shareBtn">Share <i class="bi bi-link-45deg"></i></button>
+        </div>
+    </section>
+</body>
+</html>
